@@ -1,3 +1,7 @@
+*.json          # service account keys
+.env
+*.pbix.bak
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
