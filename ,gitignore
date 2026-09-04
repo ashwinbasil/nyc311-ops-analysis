@@ -1,3 +1,0 @@
-*.json          # service account keys
-.env
-*.pbix.bak
