@@ -19,3 +19,9 @@
   (92hrs to 362hrs) Feb 2020 to June 2021.
 - DPR: chronic capacity failure, pre-dates COVID. Resolution time 1000+ hrs 
   baseline even in 2020 pre-pandemic months. Structural understaffing signal.
+
+## Volume Anomaly
+- DPR Aug 2020: total_requests spiked to 59,113 (vs 10-18k surrounding months).
+  Driver: DAMAGED TREE complaints alone = 45,011 in month.
+  Likely tied to Tropical Storm Isaias (NYC area, Aug 4 2020), which caused
+  widespread tree damage. Confirmed as real event-driven surge, not data error.
