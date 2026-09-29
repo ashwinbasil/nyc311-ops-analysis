@@ -1,6 +1,9 @@
 *.json          # service account keys
 .env
 *.pbix.bak
+dbt_project/target/
+dbt_project/dbt_packages/
+logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
