@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: mart_agency_performance
+    description: Monthly request volume, resolution, and open-backlog KPIs by agency.
+    columns:
+      - name: agency
+        tests: [not_null]
+      - name: total_requests
+        tests: [not_null]
+  - name: mart_borough_trends
+    description: Annual request volume and valid-resolution performance by borough and complaint type.
+  - name: mart_capacity_risk
+    description: Monthly agency risk classification based on worsening resolution performance and backlog rate.
+    columns:
+      - name: capacity_risk_flag
+        tests:
+          - accepted_values:
+              values: ['HIGH RISK', 'WATCH', 'STABLE']

@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: stg_311_requests
+    description: Cleaned NYC 311 requests for the eight agencies in scope.
+    columns:
+      - name: request_id
+        tests: [not_null, unique]
+      - name: agency
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['NYPD', 'HPD', 'DOT', 'DSNY', 'DEP', 'DOB', 'DPR', 'DOHMH']
+      - name: created_date
+        tests: [not_null]

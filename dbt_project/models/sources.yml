@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: nyc311
+    database: bigquery-public-data
+    schema: new_york_311
+    tables:
+      - name: service_requests
+        identifier: 311_service_requests
+        description: Public NYC 311 service request records.
+        columns:
+          - name: unique_key
+            tests: [not_null]
+          - name: created_date
+            tests: [not_null]
