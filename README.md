@@ -2,6 +2,11 @@
 
 An analytics engineering project that measures NYC agency service-request demand, resolution performance, and emerging operational risk. It uses the public NYC 311 dataset in BigQuery, transforms it with dbt, and exposes the curated marts to Power BI.
 
+## Dashboard Preview
+
+![Resolution Trend](docs/images/trend_chart.png)
+![High Risk Table](docs/images/risk_table.png)
+
 ## Questions this project answers
 
 - Which agencies receive the most requests, and how does demand change over time?
